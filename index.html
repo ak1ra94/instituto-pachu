@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instituto Pachu | Cirurgia Digestiva, Bariátrica e Saúde Integrada</title>
+  <meta name="description" content="Excelência em cirurgia digestiva, emagrecimento e saúde integrada em Campina Grande. Agende sua consulta no Instituto Pachu.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Instituto Pachu - Saúde Integrada em Campina Grande">
+  <meta property="og:description" content="Especialistas em cirurgia digestiva, bariátrica, emagrecimento e saúde integrada.">
+  <meta property="og:image" content="https://source.unsplash.com/featured/?clinic">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="assets/img/logo-pachu.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preload" as="image" href="https://source.unsplash.com/1600x900/?doctor,clinic" imagesrcset>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"MedicalClinic",
+      "name":"Instituto Pachu",
+      "description":"Centro médico de excelência em cirurgia digestiva, bariátrica e saúde integrada.",
+      "address":{
+        "@type":"PostalAddress",
+        "streetAddress":"R. Exemplo, 123",
+        "addressLocality":"Campina Grande",
+        "addressRegion":"PB",
+        "addressCountry":"BR"
+      },
+      "telephone":"+5583999999999",
+      "url":"https://www.institutopachu.com"
+    }
+  </script>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarPachu" data-bs-offset="90" tabindex="0" aria-label="Instituto Pachu Landing Page">
+
+  <!-- Loader com animação -->
+  <div id="loader" class="loader-bg d-flex align-items-center justify-content-center" aria-label="Carregando o site">
+    <div class="loader-logo-anim">
+      <img src="assets/img/logo-pachu.png" alt="Instituto Pachu" class="logo-loader">
+      <span class="loader-draw"></span>
+    </div>
+  </div>
+
+  <!-- Progress bar leitura -->
+  <div id="progressBar" class="progress-bar-top"></div>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/5583996450040?text=Olá, gostaria de agendar uma consulta!" class="whatsapp-float pulse" target="_blank" aria-label="Agende via WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- CTA Mobile fixo -->
+  <a href="https://wa.me/5583996450040?text=Olá, gostaria de agendar uma consulta!" class="cta-mobile d-lg-none">
+    <i class="bi bi-calendar-check me-1"></i> Agendar Consulta
+  </a>
+
+  <!-- Dark mode e fonte toggle -->
+  <div class="acessibilidade-tools">
+    <button id="themeToggle" class="btn btn-sm btn-outline-light me-2" aria-label="Alternar tema">
+      <i class="bi bi-moon"></i>
+    </button>
+    <button id="fontInc" class="btn btn-sm btn-outline-light" aria-label="Aumentar fonte">
+      <i class="bi bi-type"></i>
+    </button>
+  </div>
+
+  <!-- Header/Navbar -->
+  <header class="fixed-top">
+    <nav id="navbarPachu" class="navbar navbar-expand-lg navbar-dark bg-transparent py-2">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <picture>
+            <source srcset="assets/img/logo-pachu.png" media="(min-width:480px)">
+            <img src="assets/img/logo-pachu-mini.svg" alt="Instituto Pachu" height="38" class="me-2 logo-responsive">
+          </picture>
+          <span class="fw-bold fs-5">Instituto Pachu</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link scroll-link" href="#sobre" aria-current="page"><span class="nav-pill">Sobre</span></a></li>
+            <li class="nav-item"><a class="nav-link scroll-link" href="#especialidades"><span class="nav-pill">Especialidades</span></a></li>
+            <li class="nav-item"><a class="nav-link scroll-link" href="#depoimentos"><span class="nav-pill">Depoimentos</span></a></li>
+            <li class="nav-item"><a class="nav-link scroll-link" href="#contato"><span class="nav-pill">Contato</span></a></li>
+          </ul>
+          <a href="https://wa.me/5583996450040?text=Olá, gostaria de agendar uma consulta!" class="btn btn-gold ms-lg-4 d-flex align-items-center" target="_blank">
+            <i class="bi bi-whatsapp me-2"></i> Agende sua Consulta
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section d-flex align-items-center" id="hero">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <!-- Foto do time -->
+      <img src="https://source.unsplash.com/1600x900/?medical,team,clinic" alt="Equipe Instituto Pachu" class="img-fluid hero-img" loading="eager" fetchpriority="high">
+    </div>
+    <div class="container text-center position-relative z-1">
+      <h1 class="display-4 fw-bold mb-3 text-shadow headline-anim" aria-label="Especialistas que cuidam da sua saúde com excelência e humanidade.">
+        <span id="headlineAnim">Especialistas que cuidam da sua saúde com <span class="text-gold">excelência</span> e <span class="text-gold">humanidade</span>.</span>
+      </h1>
+      <p class="lead mb-4 text-light">No coração de Campina Grande, um centro de referência em saúde integrada.</p>
+      <a href="#contato" class="btn btn-gold btn-lg shadow-lg mt-2 hero-cta" aria-label="Agende sua Consulta">Agende sua Consulta</a>
+    </div>
+  </section>
+
+  <!-- Selos de confiança, parceiros, reviews -->
+  <section id="confianças" class="py-2 bg-partners">
+    <div class="container d-flex flex-wrap align-items-center justify-content-center gap-4">
+      <span class="badge-partner"><img src="assets/img/selo-lgpd.png" alt="Ambiente LGPD Seguro"></span>
+      <span class="badge-partner"><img src="assets/img/selo-doctoralia.png" alt="Avaliações Doctoralia"></span>
+      <span class="badge-partner"><img src="assets/img/selo-google.png" alt="Nota Máxima Google"></span>
+      <span class="badge-partner"><img src="assets/img/selo-pet.png" alt="Clínica Pet Friendly"></span>
+      <span class="badge-partner"><img src="assets/img/convenios.png" alt="Convênios Atendidos"></span>
+    </div>
+  </section>
+
+  <!-- Sobre o Instituto -->
+  <section id="sobre" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-6 mb-3 mb-lg-0">
+          <h2 class="fw-bold mb-3">Sobre o Instituto Pachu</h2>
+          <p class="fs-5">O Instituto Pachu nasceu do compromisso em proporcionar <strong>excelência</strong> e <strong>acolhimento</strong> em saúde, unindo uma equipe multidisciplinar, tecnologia de ponta e um ambiente que valoriza cada paciente. Somos referência em <span class="text-primary">cirurgia digestiva, bariátrica e emagrecimento</span> em Campina Grande e região.</p>
+          <ul class="list-unstyled d-flex flex-wrap gap-4 mt-4">
+            <li class="d-flex align-items-center">
+              <span class="icon-diff rounded-circle d-flex align-items-center justify-content-center me-2">
+                <svg width="28" height="28" fill="#3578a5" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M12 14c-4.418 0-8 2.239-8 5v1h16v-1c0-2.761-3.582-5-8-5z"/></svg>
+              </span>
+              <span>Atendimento Humanizado</span>
+            </li>
+            <li class="d-flex align-items-center">
+              <span class="icon-diff rounded-circle d-flex align-items-center justify-content-center me-2">
+                <svg width="28" height="28" fill="#313b4c" viewBox="0 0 24 24"><circle cx="8" cy="8" r="4"/><circle cx="16" cy="8" r="4"/><path d="M8 14c-4.418 0-8 2.239-8 5v1h8v-1c0-2.761 3.582-5 8-5h8v-1c0-2.761-3.582-5-8-5z"/></svg>
+              </span>
+              <span>Equipe Multidisciplinar</span>
+            </li>
+            <li class="d-flex align-items-center">
+              <span class="icon-diff rounded-circle d-flex align-items-center justify-content-center me-2">
+                <svg width="28" height="28" fill="#af7f2b" viewBox="0 0 24 24"><rect width="18" height="14" x="3" y="7" rx="2"/><path d="M3 7V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2"/></svg>
+              </span>
+              <span>Estrutura Moderna</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="https://source.unsplash.com/540x400/?clinic,healthcare" class="img-fluid rounded-4 shadow animate-on-scroll" alt="Equipe do Instituto Pachu reunida" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Especialidades -->
+  <section id="especialidades" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Especialidades</h2>
+        <p class="lead">Cuidado integral com profissionais especializados</p>
+      </div>
+      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4 masonry-grid">
+        <!-- Card Especialidade -->
+        <div class="col">
+          <div class="card card-spec h-100 text-center shadow-sm animate-on-scroll" data-bs-toggle="tooltip" title="Tratamento cirúrgico avançado do aparelho digestivo">
+            <div class="card-body">
+              <div class="icon-spec mb-3"><i class="bi bi-activity"></i></div>
+              <h6 class="card-title fw-bold">Cirurgião do Aparelho Digestivo</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-spec h-100 text-center shadow-sm animate-on-scroll" data-bs-toggle="tooltip" title="Cirurgia bariátrica individualizada para emagrecimento saudável">
+            <div class="card-body">
+              <div class="icon-spec mb-3"><i class="bi bi-bag-heart"></i></div>
+              <h6 class="card-title fw-bold">Cirurgião Bariátrico</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-spec h-100 text-center shadow-sm animate-on-scroll" data-bs-toggle="tooltip" title="Procedimentos cirúrgicos em geral">
+            <div class="card-body">
+              <div class="icon-spec mb-3"><i class="bi bi-person-hearts"></i></div>
+              <h6 class="card-title fw-bold">Cirurgião Geral</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-spec h-100 text-center shadow-sm animate-on-scroll" data-bs-toggle="tooltip" title="Diagnóstico e tratamento do sistema digestivo">
+            <div class="card-body">
+              <div class="icon-spec mb-3"><i class="bi bi-capsule"></i></div>
+              <h6 class="card-title fw-bold">Gastroenterologista</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-spec h-100 text-center shadow-sm animate-on-scroll" data-bs-toggle="tooltip" title="Especialista em visão e saúde ocular">
+            <div class="card-body">
+              <div class="icon-spec mb-3"><i class="bi bi-eye"></i></div>
+              <h6 class="card-title fw-bold">Oftalmologista</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-spec h-100 text-center shadow-sm animate-on-scroll" data-bs-toggle="tooltip" title="Saúde mental, acompanhamento psicológico e terapias">
+            <div class="card-body">
+              <div class="icon-spec mb-3"><i class="bi bi-emoji-smile"></i></div>
+              <h6 class="card-title fw-bold">Psicóloga</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-spec h-100 text-center shadow-sm animate-on-scroll" data-bs-toggle="tooltip" title="Planejamento alimentar e nutrição clínica">
+            <div class="card-body">
+              <div class="icon-spec mb-3"><i class="bi bi-nut"></i></div>
+              <h6 class="card-title fw-bold">Nutricionista</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-spec h-100 text-center shadow-sm animate-on-scroll" data-bs-toggle="tooltip" title="Recuperação funcional, reabilitação e dor">
+            <div class="card-body">
+              <div class="icon-spec mb-3"><i class="bi bi-heart-pulse"></i></div>
+              <h6 class="card-title fw-bold">Fisioterapeuta</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-spec h-100 text-center shadow-sm animate-on-scroll" data-bs-toggle="tooltip" title="Acompanhamento físico para emagrecimento saudável">
+            <div class="card-body">
+              <div class="icon-spec mb-3"><i class="bi bi-graph-up-arrow"></i></div>
+              <h6 class="card-title fw-bold">Educador Físico</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-spec h-100 text-center shadow-sm animate-on-scroll" data-bs-toggle="tooltip" title="Tratamento de ouvidos, nariz e garganta">
+            <div class="card-body">
+              <div class="icon-spec mb-3"><i class="bi bi-ear"></i></div>
+              <h6 class="card-title fw-bold">Otorrinolaringologista</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section id="depoimentos" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Depoimentos de Pacientes</h2>
+        <p class="lead">Veja como mudamos vidas todos os dias</p>
+      </div>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000" aria-label="Carrossel de depoimentos">
+        <div class="carousel-inner">
+          <!-- Depoimento 1 -->
+          <div class="carousel-item active">
+            <div class="testimonial-card mx-auto">
+              <div class="testimonial-avatar rounded-circle bg-primary text-light d-flex align-items-center justify-content-center fw-bold fs-3 mb-2">MC</div>
+              <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></div>
+              <p class="testimonial-text">"Texto depoimento 1"</p>
+              <div class="testimonial-meta">Pessoa 1 &mdash; Cidade <span class="badge bg-success">Verificado</span></div>
+            </div>
+          </div>
+          <!-- Depoimento 2 (com vídeo) -->
+          <div class="carousel-item">
+            <div class="testimonial-card mx-auto">
+              <div class="testimonial-avatar rounded-circle mb-2">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="João Pedro - Paciente" class="rounded-circle" width="64" height="64">
+              </div>
+              <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+              <video class="w-100 rounded mb-2" src="assets/img/testimonial-video.mp4" controls poster="https://source.unsplash.com/160x90/?doctor,patient"></video>
+              <p class="testimonial-text">"Depoimento 2"</p>
+              <div class="testimonial-meta">Pessoa 2 &mdash; Cidade <span class="badge bg-success">Verificado</span></div>
+            </div>
+          </div>
+          <!-- Depoimento 3 -->
+          <div class="carousel-item">
+            <div class="testimonial-card mx-auto">
+              <div class="testimonial-avatar rounded-circle bg-gold text-white d-flex align-items-center justify-content-center fw-bold fs-3 mb-2">LS</div>
+              <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></div>
+              <p class="testimonial-text">"Depoimento 3"</p>
+              <div class="testimonial-meta">Pessoa 3 &mdash; Cidade <span class="badge bg-success">Verificado</span></div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calculadora IMC & TMB -->
+  <section id="calculadora" class="py-5">
+    <div class="container">
+      <div class="row align-items-stretch gy-4">
+        <div class="col-lg-6">
+          <div class="card shadow-lg h-100 animate-on-scroll">
+            <div class="card-body">
+              <h2 class="fw-bold mb-3">Calcule seu IMC e TMB</h2>
+              <form id="calcForm" autocomplete="off" novalidate aria-label="Calculadora de IMC e TMB">
+                <div class="row g-3">
+                  <div class="col-6">
+                    <label for="peso" class="form-label">Peso (kg)</label>
+                    <input type="number" min="0" step="0.1" class="form-control" id="peso" required aria-required="true" inputmode="decimal" placeholder="Ex: 70">
+                  </div>
+                  <div class="col-6">
+                    <label for="altura" class="form-label">Altura (cm)</label>
+                    <input type="number" min="0" step="0.1" class="form-control" id="altura" required aria-required="true" inputmode="decimal" placeholder="Ex: 170">
+                  </div>
+                  <div class="col-6">
+                    <label for="idade" class="form-label">Idade</label>
+                    <input type="number" min="0" class="form-control" id="idade" required aria-required="true" inputmode="numeric" placeholder="Ex: 35">
+                  </div>
+                  <div class="col-6">
+                    <label for="sexo" class="form-label">Sexo</label>
+                    <select id="sexo" class="form-select" required aria-required="true">
+                      <option value="" disabled selected>Selecione</option>
+                      <option value="masc">Masculino</option>
+                      <option value="fem">Feminino</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label for="atividade" class="form-label">Nível de Atividade</label>
+                    <select id="atividade" class="form-select" required aria-required="true">
+                      <option value="" disabled selected>Selecione</option>
+                      <option value="1.2">Sedentário</option>
+                      <option value="1.375">Levemente ativo</option>
+                      <option value="1.55">Moderadamente ativo</option>
+                      <option value="1.725">Muito ativo</option>
+                      <option value="1.9">Extremamente ativo</option>
+                    </select>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-4 w-100">Calcular</button>
+              </form>
+              <div id="resultadosCalc" class="mt-4 d-none">
+                <div class="imc-status fs-5 mb-2"></div>
+                <div class="imc-bar bg-gold-subtle rounded-pill mb-2" style="height:8px; width:100%;"></div>
+                <div class="tmb-status fs-6 mb-2"></div>
+                <a href="#contato" class="btn btn-gold w-100 mt-3">Quero acompanhamento especializado</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 d-flex align-items-center justify-content-center">
+          <img src="https://source.unsplash.com/540x400/?health,weight" class="img-fluid rounded-4 shadow d-none d-lg-block animate-on-scroll" alt="Foto pachu" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria de Imagens -->
+  <section id="galeria" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Galeria da Clínica</h2>
+        <p class="lead">Conheça nossa estrutura</p>
+      </div>
+      <div class="row g-3 masonry-grid" data-masonry='{"percentPosition": true }'>
+        <div class="col-6 col-md-4 col-lg-3">
+          <a href="https://source.unsplash.com/800x600/?clinic,room" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://source.unsplash.com/1200x900/?clinic,room" data-caption="Sala de atendimento moderno">
+            <img src="https://source.unsplash.com/400x300/?clinic,room" class="img-fluid rounded-3 shadow-sm" loading="lazy" alt="Sala de atendimento">
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <a href="https://source.unsplash.com/800x600/?waiting,clinic" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://source.unsplash.com/1200x900/?waiting,clinic" data-caption="Recepção acolhedora">
+            <img src="https://source.unsplash.com/400x300/?waiting,clinic" class="img-fluid rounded-3 shadow-sm" loading="lazy" alt="Recepção">
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <a href="https://source.unsplash.com/800x600/?doctor,team" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://source.unsplash.com/1200x900/?doctor,team" data-caption="Equipe do Instituto Pachu">
+            <img src="https://source.unsplash.com/400x300/?doctor,team" class="img-fluid rounded-3 shadow-sm" loading="lazy" alt="Equipe">
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <a href="https://source.unsplash.com/800x600/?medical,equipment" class="gallery-item" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://source.unsplash.com/1200x900/?medical,equipment" data-caption="Equipamentos de última geração">
+            <img src="https://source.unsplash.com/400x300/?medical,equipment" class="img-fluid rounded-3 shadow-sm" loading="lazy" alt="Equipamentos">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="modal fade" id="lightboxModal" tabindex="-1" aria-labelledby="lightboxLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark">
+        <button type="button" class="btn-close btn-close-white ms-auto mt-2 me-2" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        <img id="lightboxImg" src="#" class="img-fluid rounded-3" alt="Imagem ampliada">
+        <div class="p-3 text-center text-white" id="lightboxCaption"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Dúvidas Frequentes</h2>
+        <p class="lead">Sua jornada com total segurança e clareza</p>
+      </div>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+              <i class="bi bi-calendar2-plus me-2"></i>Como agendar uma consulta?
+            </button>
+          </h2>
+          <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Você pode agendar sua consulta pelo WhatsApp, telefone fixo ou preenchendo o formulário no site. Nossa equipe retornará rapidamente para confirmar o atendimento.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+              <i class="bi bi-credit-card-2-front me-2"></i>Atendem convênios ou apenas particular?
+            </button>
+          </h2>
+          <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Atendemos consultas e procedimentos tanto particulares quanto diversos convênios. Consulte a lista completa pelo nosso WhatsApp.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+              <i class="bi bi-person-lines-fill me-2"></i>O acompanhamento é individualizado?
+            </button>
+          </h2>
+          <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Sim! Nossos tratamentos são personalizados para cada paciente, com suporte multidisciplinar em todas as etapas da jornada.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+              <i class="bi bi-hospital me-2"></i>Como funciona a cirurgia bariátrica?
+            </button>
+          </h2>
+          <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">A cirurgia bariátrica é indicada para obesidade severa. Nossos especialistas avaliam cada caso e explicam todo o processo, com acompanhamento nutricional, psicológico e físico.</div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <span class="me-2">Não achou sua dúvida?</span>
+          <a href="https://wa.me/5583996450040?text=Olá! Tenho uma dúvida." target="_blank" class="btn btn-success btn-sm"><i class="bi bi-whatsapp me-1"></i>Pergunte no WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Captação de Leads -->
+  <section id="newsletter" class="py-3 bg-lead">
+    <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-center gap-3">
+      <span class="lead mb-0"><i class="bi bi-envelope-heart me-2"></i>Receba novidades e dicas de saúde:</span>
+      <form id="leadForm" class="d-flex gap-2" autocomplete="off" aria-label="Cadastro de novidades">
+        <input type="email" class="form-control" id="leadEmail" placeholder="Seu melhor e-mail" required aria-required="true">
+        <button type="submit" class="btn btn-gold"><i class="bi bi-send"></i> Receber</button>
+      </form>
+      <div id="leadFeedback" style="display:none;"></div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3">Fale Conosco</h2>
+          <form id="contatoForm" novalidate aria-label="Formulário de Contato">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" required aria-required="true" autocomplete="name">
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" required aria-required="true" autocomplete="email">
+              </div>
+              <div class="col-md-6">
+                <label for="telefone" class="form-label">Telefone</label>
+                <input type="tel" class="form-control" id="telefone" required aria-required="true" autocomplete="tel" placeholder="(83) 99999-9999" maxlength="15">
+              </div>
+              <div class="col-12">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="3" required aria-required="true" autocomplete="off"></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
+              </div>
+              <div class="col-12">
+                <div id="formFeedback" class="mt-2" style="display: none;"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-6">
+          <div class="ratio ratio-16x9 rounded-3 shadow mb-3">
+            <iframe src="https://www.google.com/maps?q=Campina+Grande+PB&output=embed" allowfullscreen title="Instituto Pachu - Localização"></iframe>
+          </div>
+          <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+            <span class="fw-bold text-secondary"><i class="bi bi-geo-alt me-2"></i> R. Exemplo, 123 - Campina Grande, PB</span>
+            <a href="https://maps.google.com/?q=Campina+Grande+PB" target="_blank" class="btn btn-gold btn-sm"><i class="bi bi-signpost-split me-2"></i>Como chegar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-md-4 text-center text-md-start">
+          <img src="assets/img/logo-pachu.png" alt="Instituto Pachu" height="38" class="mb-2">
+          <div class="small">&copy; 2025 Instituto Pachu. Todos os direitos reservados.</div>
+        </div>
+        <div class="col-md-4 text-center">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item"><a href="#sobre" class="footer-link">Sobre</a></li>
+            <li class="list-inline-item"><a href="#especialidades" class="footer-link">Especialidades</a></li>
+            <li class="list-inline-item"><a href="#depoimentos" class="footer-link">Depoimentos</a></li>
+            <li class="list-inline-item"><a href="#contato" class="footer-link">Contato</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-center text-md-end">
+          <div class="mb-2">
+            <a href="https://wa.me/5583996450040" target="_blank" class="me-3 text-light"><i class="bi bi-whatsapp fs-5"></i></a>
+            <a href="#" class="me-3 text-light"><i class="bi bi-instagram fs-5"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-facebook fs-5"></i></a>
+          </div>
+          <div class="small">WhatsApp: (83) 99645-0040</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast de feedback -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" id="toastArea" style="z-index: 12000;"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
